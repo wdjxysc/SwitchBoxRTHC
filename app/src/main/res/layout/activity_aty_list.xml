@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rthc.switchboxtrhc.AtyListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_text_bg" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#FF4081"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/noticeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/progressBar"
+                android:text="提示"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/scanNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg"
+                android:hint="BleName"
+                android:padding="7dp"
+                android:text="0001"
+                android:textSize="26sp" />
+
+            <!--<Button-->
+            <!--android:id="@+id/scanBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@drawable/btn_selector"-->
+            <!--android:text="扫描"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="24sp" />-->
+
+            <ImageButton
+                android:id="@+id/scanBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_blue_light"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_youtube_searched_for_white_48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/relayEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="23sp"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:hint="中继号"
+                android:enabled="false"/>
+            <CheckBox
+                android:id="@+id/relayCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中继"
+                android:layout_gravity="center"
+                android:textSize="26sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/fourBytesRB"
+                    android:text="4ID"
+                    android:checked="true"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="2ID"
+                    android:id="@+id/towBytesRB"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <!--<Button-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:id="@+id/btn1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="130dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="40sp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:text="测试"-->
+        <!--android:background="@drawable/btn_selector"/>-->
+
+        <!--<Button-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:id="@+id/btn2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="130dp"-->
+        <!--android:textSize="40sp"-->
+        <!--android:text="设置"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@drawable/btn_selector"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_selector"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/testbg"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="气表测试"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_selector"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settingsbg"
+                    android:text="设置"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="气表设置"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <!--<Button-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:id="@+id/btn1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="130dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="40sp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:text="测试"-->
+        <!--android:background="@drawable/btn_selector"/>-->
+
+        <!--<Button-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:id="@+id/btn2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="130dp"-->
+        <!--android:textSize="40sp"-->
+        <!--android:text="设置"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@drawable/btn_selector"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_selector"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settingsbg"
+                    android:text="设置"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="盒子设置"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_selector"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/testbg"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="气表测试"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/meterManagerBtn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="气表管理"/>
+
+</LinearLayout>

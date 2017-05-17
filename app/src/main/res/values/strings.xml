@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">盒子抄表</string>
+
+    <string name="time">时间:</string>
+    <string name="null_value">--</string>
+    <string name="meter_data">读数:</string>
+    <string name="state">状态</string>
+</resources>

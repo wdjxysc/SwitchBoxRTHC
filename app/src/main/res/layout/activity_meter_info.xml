@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="16dp"
+    tools:context="com.rthc.switchboxtrhc.RLMeterInfoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="楼层:"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/floorTextView"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="房序:"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/houseIndexTextView"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="门牌号:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/houseNumEditText"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:text="0101"
+            android:background="@drawable/corners_background"
+            android:padding="5dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="户主:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/householderNameEditText"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:text="铁扇公主"
+            android:background="@drawable/corners_background"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="表号:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/meterIdEditText"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:text="170"
+            android:background="@drawable/corners_background"
+            android:padding="5dp"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:background="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="网络ID:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/netIdEditText"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:text="170"
+            android:background="@drawable/corners_background"
+            android:padding="5dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/saveBtn"
+            android:text="设置" />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="保存" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
